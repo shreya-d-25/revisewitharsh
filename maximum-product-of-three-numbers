@@ -1,0 +1,16 @@
+#628. Maximum Product of Three Numbers
+
+class Solution {
+public:
+    int maximumProduct(vector<int>& nums) {
+        int n = nums.size();
+        sort(nums.rbegin(),nums.rend());
+        //only +ve no.s - max 3
+        int ans1 = nums[0]*nums[1]*nums[2];
+        //if -ve no.s present - max1 and 2 min
+        int ans2 = nums[0] * nums[n-1] * nums[n-2];
+
+        if(ans1>ans2){return ans1;}
+        else{return ans2;}
+    }
+};
