@@ -1,3 +1,3 @@
 # revisewitharsh
 #CrackYourPlacement 45-60 day challenge
-# https://youtu.be/gNpZHvl095s
+# Guaranteed Internship and Placement Roadmap | 45 Days Challenge | Referrals | Mock Interviews 🔥
