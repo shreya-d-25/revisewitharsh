@@ -1,0 +1,25 @@
+202. Happy Number
+https://leetcode.com/problems/happy-number
+
+class Solution {
+    public boolean isHappy(int n) {
+        int t1=n,t2=n;
+        do{
+            t1=sumOfSquaresNum(t1);
+            t2=sumOfSquaresNum(sumOfSquaresNum(t2));
+        }while(t1!=t2);
+        System.out.println(t1+ " "+ t2);
+
+        return t1==1;        
+    }
+
+    public int sumOfSquaresNum(int n ){
+        int r = 0;
+        while(n!=0){
+            r += (int)Math.pow(n%10,2);
+            n/=10;
+        }
+        return r;
+
+    }
+}
